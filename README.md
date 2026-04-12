@@ -1,0 +1,22 @@
+One file to rule them all, one file to execute more than 20 different scripts with options included on which ones to choose from.
+Updating hosts file from blacklist site repositories, 
+Clearing all event logs, 
+Disable IPv6, 
+DNS options,
+Intel heavy optimization for both old and new CPUs, 
+Ryzen heavy optimization for Ryzen 5000, 7000 and 9000 series,
+Security options from mid to corporation level,
+Nvidia RTX and AMD RX graphic video cards perfomance tweaks, 
+Secure updates only,
+Heavy server load for both Intel and Ryzen processors, 
+System core scan,
+Change admin password, 
+Reboot options, 
+Shutdown options,
+With VPN and without VPN networking tweaking for latency
+Reset wallpaper and wipe theme cache, 
+Advance boot system options,
+Clear temporary files, 
+Smart optimise SSD and hard drives
+Offline browser trace and cookie cleaner
+Play background music
