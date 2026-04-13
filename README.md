@@ -14,12 +14,12 @@ System core scan,
 Change admin password, 
 Reboot options, 
 Shutdown options,
-With VPN and without VPN networking tweaking for latency
+With VPN and without VPN networking tweaking for latency,
 Reset wallpaper and wipe theme cache, 
 Advance boot system options,
 Clear temporary files, 
-Smart optimise SSD and hard drives
-Offline browser trace and cookie cleaner
-Play background music
-Hardware and most active processes monitor
+Smart optimise SSD and hard drives,
+Offline browser trace and cookie cleaner,
+Play background music,
+Hardware and most active processes monitor,
 Paranoid Security
