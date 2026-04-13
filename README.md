@@ -21,5 +21,5 @@ Clear temporary files,
 Smart optimise SSD and hard drives,
 Offline browser trace and cookie cleaner,
 Play background music,
-Hardware and most active processes monitor,
+Hardware usage and most active processes monitor,
 Paranoid Security
