@@ -1,4 +1,5 @@
 One file to rule them all, one file to execute more than 20 different scripts with options included on which ones to choose from.
+Restore Point,
 Updating hosts file from blacklist site repositories, 
 Clearing all event logs, 
 Disable IPv6, 
@@ -20,3 +21,5 @@ Clear temporary files,
 Smart optimise SSD and hard drives
 Offline browser trace and cookie cleaner
 Play background music
+Perfomance Monitor
+Paranoid Security
