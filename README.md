@@ -1,5 +1,5 @@
 One file to rule them all, one file to execute more than 20 different scripts with options included on which ones to choose from.
-Restore Point,
+System Restore Point,
 Updating hosts file from blacklist site repositories, 
 Clearing all event logs, 
 Disable IPv6, 
