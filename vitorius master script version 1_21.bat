@@ -32,17 +32,17 @@ if %errorlevel% neq 0 (
 cls
 echo.
 echo %cBlue% _____                     _   _  _      _                               %cReset%
-echo %cBlue%/  __ \                   / \ ^| ^|^| ^|    ^| ^|                              %cReset%
-echo %cBlue%^| /  \/ _ __  __ _  ____  /  ^  \ ^| ^| ___^| ^|__   ___ _ __ ___  _   _     %cReset%
+echo %cBlue%/  __ \                   / \ ^| ^|^| ^|    ^| ^|                               %cReset%
+echo %cBlue%^| /  \/ _ __  __ _  ____  /  ^  \ ^| ^| ___^| ^|__   ___ _ __ ___  _   _      %cReset%
 echo %cBlue%^| ^|    ^| '__^|/ _` ^|^|_  / / /_\ \^| ^|/ __^| '_ \ / _ \ '_ ` _ \^| ^| ^| ^|    %cReset%
 echo %cBlue%^| \__/\^| ^|  ^| (_^| ^| / / /  ___  \^| ^| (__^| ^| ^| ^|  __/ ^| ^| ^| ^| ^| ^|_^| ^|    %cReset%
 echo %cBlue% \____/^|_^|   \__,_^|/___^|\_/   \_/_^|\___^|_^| ^|_^|\___^|_^| ^|_^| ^|_^|\__, ^|    %cReset%
-echo %cBlue%                                                              __/ ^|    %cReset%
-echo %cBlue%                                                             ^|___/     %cReset%
+echo %cBlue%                                                             __/ ^|    %cReset%
+echo %cBlue%                                                            ^|___/     %cReset%
 echo.
 echo    We Are One, We Are Many, We Are Crazy Alchemy 332
 echo.
-echo %cRed%[INFO] Loading creator Vitorius configurations version 1.07%cReset%
+echo %cRed%[INFO] Loading creator Vitorius configurations version 1.21%cReset%
 timeout /t 6 /nobreak >nul
 
 :menu
@@ -50,32 +50,35 @@ cls
 echo ======================================================
 echo                  VITORIUS MASTER TWEAKS
 echo ======================================================
-echo %cBlue%1.  Update Hosts (Deep Blacklist ^& Telemetry Block)%cReset%
-echo %cBlue%2.  Clear ALL Event Logs (Forceful Dual-Pass Bypass)%cReset%
-echo %cBlue%3.  Disable IPv6 (Kernel Level)%cReset%
-echo %cBlue%4.  DNS Options ^& Winsock Reset%cReset%
-echo %cBlue%5.  Intel Heavy Auto-Optimization (Aggressive Scheduling)%cReset%
-echo %cBlue%6.  Ryzen Heavy Optimization (Infinity Fabric Override)%cReset%
-echo %cBlue%7.  Modify Security (Deep Registry Hardening)%cReset%
-echo %cBlue%8.  NVIDIA RTX Performance (MSI ^& Preemption Tweaks)%cReset%
-echo %cBlue%9.  AMD RX Performance (ULPS Disable)%cReset%
-echo %cBlue%10. Secure Updates Only (Kill Telemetry ^& P2P)%cReset%
-echo %cBlue%11. Heavy Server Load (Intel - TCP Stack Hardening)%cReset%
-echo %cBlue%12. Heavy Server Load (Ryzen - I/O ^& NUMA Hardening)%cReset%
-echo %cBlue%13. System Core Scan (Deep Component Cleanup ^& DISM)%cReset%
-echo %cBlue%14. Change Admin Password (Force Complexity)%cReset%
-echo %cBlue%15. Reboot Options (Force Close Apps)%cReset%
-echo %cBlue%16. Shutdown Options (Force Close Apps)%cReset%
-echo %cBlue%17. VPN vs Gaming Latency (BBR Congestion Control)%cReset%
-echo %cBlue%18. Reset Wallpaper ^& Wipe Theme Cache%cReset%
-echo %cBlue%19. Advanced Boot Subsystem (Legacy F8 ^& No GUI)%cReset%
-echo %cBlue%20. Clear Temporary Files (Prefetch ^& Update Cache)%cReset%
-echo %cBlue%21. Smart Optimize (Drive Trim ^& MFT Defrag)%cReset%
-echo %cBlue%22. Offline Browser Trace ^& Cookie Cleaner%cReset%
+echo %cBlue%1.  Create Heavy System Restore Point (Failsafe)%cReset%
+echo %cBlue%2.  Update Hosts (Deep Blacklist ^& Telemetry Block)%cReset%
+echo %cBlue%3.  Clear ALL Event Logs (Forceful Dual-Pass Bypass)%cReset%
+echo %cBlue%4.  Disable IPv6 (Kernel Level)%cReset%
+echo %cBlue%5.  DNS Options ^& Winsock Reset%cReset%
+echo %cBlue%6.  Intel Heavy Auto-Optimization (Aggressive Scheduling)%cReset%
+echo %cBlue%7.  Ryzen Heavy Optimization (Infinity Fabric Override)%cReset%
+echo %cBlue%8.  Modify Security (Deep Registry Hardening)%cReset%
+echo %cBlue%9.  NVIDIA RTX Performance (MSI ^& Preemption Tweaks)%cReset%
+echo %cBlue%10. AMD RX Performance (ULPS Disable)%cReset%
+echo %cBlue%11. Secure Updates Only (Kill Telemetry ^& P2P)%cReset%
+echo %cBlue%12. Heavy Server Load (Intel - TCP Stack Hardening)%cReset%
+echo %cBlue%13. Heavy Server Load (Ryzen - I/O ^& NUMA Hardening)%cReset%
+echo %cBlue%14. System Core Scan (Deep Component Cleanup ^& DISM)%cReset%
+echo %cBlue%15. Change Admin Password (Force Complexity)%cReset%
+echo %cBlue%16. Reboot Options (Force Close Apps)%cReset%
+echo %cBlue%17. Shutdown Options (Force Close Apps)%cReset%
+echo %cBlue%18. VPN vs Gaming Latency (BBR Congestion Control)%cReset%
+echo %cBlue%19. Reset Wallpaper ^& Wipe Theme Cache%cReset%
+echo %cBlue%20. Advanced Boot Subsystem (Legacy F8 ^& No GUI)%cReset%
+echo %cBlue%21. Clear Temporary Files (Prefetch ^& Update Cache)%cReset%
+echo %cBlue%22. Smart Optimize (Drive Trim ^& MFT Defrag)%cReset%
+echo %cBlue%23. Offline Browser Trace ^& Cookie Cleaner%cReset%
 echo %cBlue%24. Play Background Music (Loop MP3)%cReset%
-echo %cBlue%25. Exit%cReset%
+echo %cBlue%25. Live System Resource Monitor (CPU/RAM/GPU)%cReset%
+echo %cBlue%26. Paranoid Security (Extreme Lockdown)%cReset%
+echo %cBlue%27. Exit%cReset%
 echo ======================================================
-set /p choice="Select an option (1-25): "
+set /p choice="Select an option (1-26): "
 
 :: --- MAPPINGS ---
 if "%choice%"=="1" goto op1
@@ -102,11 +105,37 @@ if "%choice%"=="21" goto op21
 if "%choice%"=="22" goto op22
 if "%choice%"=="23" goto op23
 if "%choice%"=="24" goto op24
-if "%choice%"=="25" goto exit_routine
+if "%choice%"=="25" goto op25
+if "%choice%"=="26" goto op26
+if "%choice%"=="27" goto exit_routine
 goto menu
 
-:: --- OPTION 1: DEEP BLACKLIST ---
+:: --- OPTION 1: HEAVY SYSTEM RESTORE POINT (FAILSAFE) ---
 :op1
+cls
+echo.
+echo %cRed%[INFO] Initializing Core System Failsafe Protocol...%cReset%
+echo %cRed%[BACKGROUND] Ensuring OS Rollback capabilities before applying kernel and registry level mutations.%cReset%
+
+echo %cRed%[REGISTRY] Overriding Windows 24-Hour Checkpoint Frequency Limit...%cReset%
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" /v SystemRestorePointCreationFrequency /t REG_DWORD /d 0 /f >nul 2>&1
+
+echo %cRed%[KERNEL] Engaging Volume Shadow Copy Service (VSS) on OS Drive...%cReset%
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Enable-ComputerRestore -Drive 'C:\' -ErrorAction SilentlyContinue" >nul 2>&1
+
+echo %cRed%[WORKING] Generating VITORIUS MASTER TWEAKS Snapshot. This may take a minute...%cReset%
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'Vitorius Master Pre-Tweak' -RestorePointType 'MODIFY_SETTINGS' -ErrorAction SilentlyContinue"
+
+if %errorlevel% equ 0 (
+    echo %cRed%[SUCCESS] Immutable OS Restore Point established.%cReset%
+) else (
+    echo %cRed%[WARNING] Restore Point creation bypassed. VSS may be deeply disabled.%cReset%
+)
+pause
+goto menu
+
+:: --- OPTION 2: DEEP BLACKLIST ---
+:op2
 echo.
 echo %cRed%[INFO] Target: Top 10 Blacklist Repositories%cReset%
 echo %cRed%[BACKGROUND] Replacing native hosts file to route telemetry, ad-networks, and malicious domains directly to 0.0.0.0, blocking them at the OS level.%cReset%
@@ -130,8 +159,8 @@ echo %cRed%[SUCCESS] Hosts updated! Locked and blocked %DOMAIN_COUNT% unique dom
 pause
 goto menu
 
-:: --- OPTION 2: FORCEFUL LOG CLEAR ---
-:op2
+:: --- OPTION 3: FORCEFUL LOG CLEAR ---
+:op3
 echo.
 echo %cRed%[INFO] Initiating Forceful Dual-Pass Log Bypass...%cReset%
 echo %cRed%[BACKGROUND] Windows stores deep diagnostic data in Event Logs. Clearing these frees up MFT records and destroys forensic diagnostic traces.%cReset%
@@ -143,8 +172,8 @@ echo %cRed%[SUCCESS] All telemetry and event logs eradicated.%cReset%
 pause
 goto menu
 
-:: --- OPTION 3: KERNEL LEVEL IPV6 DISABLE ---
-:op3
+:: --- OPTION 4: KERNEL LEVEL IPV6 DISABLE ---
+:op4
 echo.
 echo %cRed%[INFO] Targeting IPv6 Network Stack...%cReset%
 echo %cRed%[BACKGROUND] IPv6 can cause DNS leaks, broadcast overhead, and latency spikes in strictly IPv4 environments (like most gaming/VPN setups).%cReset%
@@ -156,8 +185,8 @@ echo %cRed%[SUCCESS] IPv6 completely disabled at kernel level.%cReset%
 pause
 goto menu
 
-:: --- OPTION 4: DNS & WINSOCK RESET ---
-:op4
+:: --- OPTION 5: DNS & WINSOCK RESET ---
+:op5
 cls
 echo %cRed%[INFO] Select Custom DNS Routing%cReset%
 echo %cRed%[BACKGROUND] Rebuilding the TCP/IP stack resolves corrupted network caches, while custom DNS routes requests faster than default ISP servers.%cReset%
@@ -177,8 +206,8 @@ echo %cRed%[SUCCESS] Deep DNS and Routing Applied.%cReset%
 pause
 goto menu
 
-:: --- OPTION 5: INTEL 12TH GEN+ SCHEDULING (SAFE HIGH PERFORMANCE) ---
-:op5
+:: --- OPTION 6: INTEL 12TH GEN+ SCHEDULING (SAFE HIGH PERFORMANCE) ---
+:op6
 echo.
 echo %cRed%[INFO] Intel 12th Gen+ Thread Director Optimization%cReset%
 echo %cRed%[BACKGROUND] Modern hybrid CPUs rely on native hardware telemetry (Intel ITD). Hardcoding legacy scheduler values breaks P-Core/E-Core assignment. This mode enforces max performance while keeping the Thread Director active.%cReset%
@@ -212,8 +241,8 @@ echo %cRed%[SUCCESS] Intel Deep Optimization Applied.%cReset%
 pause
 goto menu
 
-:: --- OPTION 6: RYZEN INFINITY FABRIC OVERRIDE ---
-:op6
+:: --- OPTION 7: RYZEN INFINITY FABRIC OVERRIDE ---
+:op7
 cls
 echo %cRed%[INFO] Select Target Architecture%cReset%
 echo %cRed%[BACKGROUND] Ryzen architectures rely heavily on Infinity Fabric and Collaborative Power Performance Control (CPPC). We must align the OS scheduler to match AMD's core complexes (CCX).%cReset%
@@ -246,8 +275,8 @@ echo %cRed%[SUCCESS] Ryzen Infinity Optimization Applied.%cReset%
 pause
 goto menu
 
-:: --- OPTION 7: DEEP SECURITY HARDENING ---
-:op7
+:: --- OPTION 8: DEEP SECURITY HARDENING ---
+:op8
 cls
 echo %cRed%[INFO] Select Security Posture%cReset%
 echo %cRed%[BACKGROUND] Standard Windows security is permissive. These profiles manipulate UAC, Windows Defender heuristics, Execution Policies, and Local Security Authority (LSA) limits.%cReset%
@@ -257,27 +286,16 @@ echo %cBlue%3. Extreme (Maximum Home Defense ^& Anti-Exploit)%cReset%
 echo %cBlue%4. Corporate (Full Lockdown ^& SMBv1 Kill)%cReset%
 echo %cBlue%5. Cancel and Go Back%cReset%
 
-:: Clear variable and get input
 set "sec_choice="
 set /p sec_choice="Choice: "
-
-:: Strip any accidental quote marks the user might type
 set sec_choice=%sec_choice:"=%
 
-:: BULLETPROOF ROUTING (No parentheses allowed)
 if "%sec_choice%"=="1" goto deploy_sec_1
 if "%sec_choice%"=="2" goto deploy_sec_2
 if "%sec_choice%"=="3" goto deploy_sec_3
 if "%sec_choice%"=="4" goto deploy_sec_4
 if "%sec_choice%"=="5" goto menu
-
-:: If they typed anything else, just refresh the menu
-goto op7
-
-
-:: ==========================================
-:: ISOLATED EXECUTION BLOCKS
-:: ==========================================
+goto op8
 
 :deploy_sec_1
 echo %cRed%[WORKING] Hardening system policies...%cReset%
@@ -316,8 +334,8 @@ echo %cRed%[SUCCESS] Security Profile Deployed.%cReset%
 pause
 goto menu
 
-:: --- OPTION 8: NVIDIA RTX LATENCY (PREEMPTION) ---
-:op8
+:: --- OPTION 9: NVIDIA RTX LATENCY (PREEMPTION) ---
+:op9
 echo.
 echo %cRed%[INFO] Targeting NVIDIA GPU Subsystem...%cReset%
 echo %cRed%[BACKGROUND] Modifying the graphics driver scheduler to utilize Hardware-Accelerated GPU Scheduling (HWSchMode) and enabling strict execution Preemption to drop frame latency.%cReset%
@@ -329,8 +347,8 @@ echo %cRed%[SUCCESS] RTX Low-Latency Architecture Applied.%cReset%
 pause
 goto menu
 
-:: --- OPTION 9: AMD RX LATENCY (ULPS) ---
-:op9
+:: --- OPTION 10: AMD RX LATENCY (ULPS) ---
+:op10
 echo.
 echo %cRed%[INFO] Targeting AMD GPU Subsystem...%cReset%
 echo %cRed%[BACKGROUND] AMD cards utilize Ultra Low Power State (ULPS) which severely throttles clock recovery times. We are searching the registry class to hard-disable this feature.%cReset%
@@ -342,8 +360,8 @@ echo %cRed%[SUCCESS] AMD Performance State Locked.%cReset%
 pause
 goto menu
 
-:: --- OPTION 10: SECURE UPDATES / TELEMETRY KILL ---
-:op10
+:: --- OPTION 11: SECURE UPDATES / TELEMETRY KILL ---
+:op11
 echo.
 echo %cRed%[INFO] Modifying Windows Update Framework...%cReset%
 echo %cRed%[BACKGROUND] Microsoft uses forced telemetry and background Peer-to-Peer (Delivery Optimization) to share updates, eating bandwidth. This locks updates to critical-only.%cReset%
@@ -357,30 +375,20 @@ echo %cRed%[SUCCESS] OS Locked to Secure Patches Only.%cReset%
 pause
 goto menu
 
-:: --- OPTION 11: DYNAMIC RAM & HEAVY SERVER LOAD (TCP) ---
-:op11
+:: --- OPTION 12: DYNAMIC RAM & HEAVY SERVER LOAD (TCP) ---
+:op12
 echo.
 echo %cRed%[INFO] Dynamic Memory ^& Network Optimization...%cReset%
-
-:: Fallback default in case PowerShell fails or is blocked
 set "RAM_GB=16"
-
-:: Use PowerShell to detect exact physical RAM in GB safely
 echo %cRed%[WORKING] Detecting System RAM...%cReset%
 for /f "usebackq tokens=*" %%A in (`powershell -NoProfile -Command "[math]::Round((Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB)" 2^>nul`) do (
     set "RAM_GB=%%A"
 )
-
-:: Force the variable to act as an integer to prevent batch syntax crashes
 set /a RAM_GB=%RAM_GB% 2>nul
 if "%RAM_GB%"=="0" set "RAM_GB=16"
-
 echo %cRed%[INFO] Detected/Using %RAM_GB% GB of Physical Memory.%cReset%
-
-:: Dynamic RAM Allocation Logic (Linear checks are crash-proof in batch)
 set "IOPAGE=1048576"
 set "RAM_PROF=Extreme RAM (128GB+)"
-
 if %RAM_GB% LEQ 64 (
     set "IOPAGE=524288"
     set "RAM_PROF=Ultra RAM (64GB)"
@@ -397,27 +405,22 @@ if %RAM_GB% LEQ 8 (
     set "IOPAGE=65536"
     set "RAM_PROF=Low RAM (8GB)"
 )
-
 echo %cRed%[INFO] %RAM_PROF% profile loaded.%cReset%
 echo %cRed%[REGISTRY] Setting IoPageLockLimit to %IOPAGE%...%cReset%
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v IoPageLockLimit /t REG_DWORD /d %IOPAGE% /f >nul 2>&1
-
-:: Remove LargeSystemCache (It causes extreme stuttering in modern games/apps)
 echo %cRed%[REGISTRY] Ensuring Legacy LargeSystemCache is disabled...%cReset%
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v LargeSystemCache /t REG_DWORD /d 0 /f >nul 2>&1
-
 echo %cRed%[KERNEL] Optimizing TCP/IP Stack for Server/Heavy Load...%cReset%
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v MaxUserPort /t REG_DWORD /d 65534 /f >nul 2>&1
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v TcpTimedWaitDelay /t REG_DWORD /d 30 /f >nul 2>&1
 call netsh int tcp set global rss=enabled >nul 2>&1
 call netsh int tcp set global autotuninglevel=normal >nul 2>&1
-
 echo %cRed%[SUCCESS] Dynamic RAM and TCP optimization applied.%cReset%
 pause
 goto menu
 
-:: --- OPTION 12: RYZEN SERVER LOAD (NUMA HARDENING) ---
-:op12
+:: --- OPTION 13: RYZEN SERVER LOAD (NUMA HARDENING) ---
+:op13
 echo.
 echo %cRed%[INFO] Detecting Ryzen Subsystem Natively...%cReset%
 echo %cRed%[BACKGROUND] Ryzen architectures require modified Non-Uniform Memory Access (NUMA) parameters and lifted I/O page limits to handle massive concurrent server threads.%cReset%
@@ -426,7 +429,6 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v Size /t REG_DWORD /d 3 /f >nul 2>&1
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v NetworkThrottlingIndex /t REG_DWORD /d 4294967295 /f >nul 2>&1
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v MaxUserPort /t REG_DWORD /d 65534 /f >nul 2>&1
-
 reg query "HKLM\HARDWARE\DESCRIPTION\System\CentralProcessor\0" /v ProcessorNameString | findstr /i "5000 7000 9000" >nul
 if %errorlevel% equ 0 (
     echo %cRed%[REGISTRY] Zen 3+ Detected. Unlocking IoPageLockLimit for massive throughput...%cReset%
@@ -440,8 +442,8 @@ echo %cRed%[SUCCESS] Ryzen Server Optimization Active.%cReset%
 pause
 goto menu
 
-:: --- OPTION 13: SYSTEM SCAN (DEEP COMPONENT) ---
-:op13
+:: --- OPTION 14: SYSTEM SCAN (DEEP COMPONENT) ---
+:op14
 echo.
 echo %cRed%[INFO] Launching Deep Core Repair Protocols...%cReset%
 echo %cRed%[BACKGROUND] Windows Deployment Image Servicing and Management (DISM) will verify the native component store, followed by System File Checker (SFC) replacing any corrupt system DLLs.%cReset%
@@ -455,15 +457,15 @@ echo %cRed%[SUCCESS] Core OS Verification Complete.%cReset%
 pause
 goto menu
 
-:: --- OPTION 14: CHANGE ADMIN PASS (COMPLEXITY) ---
-:op14
+:: --- OPTION 15: CHANGE ADMIN PASS (COMPLEXITY) ---
+:op15
 echo.
 echo %cRed%[INFO] Requesting Security Override...%cReset%
 echo %cRed%[BACKGROUND] Forcing strict net account policies locally before issuing a direct RPC command to overwrite the current user's password hash.%cReset%
 echo %cRed%[KERNEL] Forcing complexity rules (Min 8 chars, Unlimited Age)...%cReset%
 call net accounts /maxpwage:unlimited /minpwlen:8 >nul 2>&1
 
-:op14_prompt
+:op15_prompt
 set /p opass="Enter Current Password: "
 set /p npass="Enter New Password: "
 set /p npass2="Retype New Password: "
@@ -472,9 +474,8 @@ if not "%npass%"=="%npass2%" (
     echo.
     echo %cRed%[ERROR] Passwords do not match! Please try again.%cReset%
     echo.
-    goto op14_prompt
+    goto op15_prompt
 )
-
 echo %cRed%[KERNEL] Committing local credential via NET USER...%cReset%
 call net user "%username%" "%npass%" >nul 2>&1
 
@@ -483,12 +484,11 @@ if %errorlevel% equ 0 (
 ) else (
     echo %cRed%[ERROR] Failed to update. Password may not meet the 8-character minimum complexity.%cReset%
 )
-
 pause
 goto menu
 
-:: --- OPTION 15: REBOOT OPTIONS (FORCE) ---
-:op15
+:: --- OPTION 16: REBOOT OPTIONS (FORCE) ---
+:op16
 cls
 echo %cRed%[INFO] Execute Hard Reboot Command%cReset%
 echo %cRed%[BACKGROUND] Uses shutdown.exe to send a direct interrupt to the kernel, bypassing application hang states (Force Flag /f).%cReset%
@@ -512,8 +512,8 @@ echo %cRed%[SUCCESS] RPC Reboot signal sent (300s).%cReset%
 pause
 goto menu
 
-:: --- OPTION 16: SHUTDOWN OPTIONS (FORCE) ---
-:op16
+:: --- OPTION 17: SHUTDOWN OPTIONS (FORCE) ---
+:op17
 cls
 echo %cRed%[INFO] Execute Hard Shutdown Command%cReset%
 echo %cRed%[BACKGROUND] Uses shutdown.exe to send a direct ACPI power down signal to the kernel, forcing hung processes to terminate.%cReset%
@@ -537,8 +537,8 @@ echo %cRed%[SUCCESS] RPC Shutdown signal sent (300s).%cReset%
 pause
 goto menu
 
-:: --- OPTION 17: VPN / GAMING TWEAKS (BBR) ---
-:op17
+:: --- OPTION 18: VPN / GAMING TWEAKS (BBR) ---
+:op18
 cls
 echo %cRed%[INFO] Target Network Stack Topology%cReset%
 echo %cRed%[BACKGROUND] Gaming requires TCPNoDelay (Nagle's Algorithm disable) to process tiny packets fast. VPNs require strict MTU limits to prevent packet fragmentation. BBR2 is a modern Google congestion algorithm.%cReset%
@@ -566,8 +566,8 @@ echo %cRed%[SUCCESS] Network Modification Complete.%cReset%
 pause
 goto menu
 
-:: --- OPTION 18: RESET WALLPAPER/SCREENSAVER (WIPE CACHE) ---
-:op18
+:: --- OPTION 19: RESET WALLPAPER/SCREENSAVER (WIPE CACHE) ---
+:op19
 echo.
 echo %cRed%[INFO] Initializing Theme Purge...%cReset%
 echo %cRed%[BACKGROUND] Windows caches compressed wallpapers in hidden AppData directories. We delete these files and force the Desktop Window Manager (DWM) to reload registry defaults.%cReset%
@@ -583,8 +583,8 @@ echo %cRed%[SUCCESS] Desktop reset to factory default.%cReset%
 pause
 goto menu
 
-:: --- OPTION 19: ADVANCED BOOT SUBSYSTEM (FLATTENED / CRASH PROOF) ---
-:op19
+:: --- OPTION 20: ADVANCED BOOT SUBSYSTEM (FLATTENED / CRASH PROOF) ---
+:op20
 cls
 echo %cRed%[INFO] Advanced Kernel Boot Subsystem%cReset%
 echo %cRed%[BACKGROUND] Interacts directly with the Windows Boot Configuration Data (BCD). Allows overriding default GUI loads, disabling auto-repair loops, and restoring the legacy F8 interrupt key.%cReset%
@@ -650,8 +650,8 @@ echo %cRed%[SUCCESS] Normal boot restored.%cReset%
 pause
 goto menu
 
-:: --- OPTION 20: TEMP CLEANER (PREFETCH & UPDATES) ---
-:op20
+:: --- OPTION 21: TEMP CLEANER (PREFETCH & UPDATES) ---
+:op21
 echo.
 echo %cRed%[INFO] Executing Volatile Memory Purge...%cReset%
 echo %cRed%[BACKGROUND] Eliminates fragmented temporary data. Deleting Prefetch forces Windows to rebuild optimal load paths for software. Deleting SoftwareDistribution clears corrupted Windows Update payloads.%cReset%
@@ -667,8 +667,8 @@ echo %cRed%[SUCCESS] Storage Optimization Complete.%cReset%
 pause
 goto menu
 
-:: --- OPTION 21: SMART SSD/HDD OPTIMIZE (MFT DEFRAG) ---
-:op21
+:: --- OPTION 22: SMART SSD/HDD OPTIMIZE (MFT DEFRAG) ---
+:op22
 echo.
 echo %cRed%[INFO] Accessing Logical Disk Manager...%cReset%
 echo %cRed%[BACKGROUND] Ensures native OS TRIM functionality is active, then executes a PowerShell command to identify Fixed Drive types, applying a Retrim for SSD/NVMe or a Defrag for HDD.%cReset%
@@ -680,8 +680,8 @@ echo %cRed%[SUCCESS] Volume I/O Restored.%cReset%
 pause
 goto menu
 
-:: --- OPTION 22: OFFLINE BROWSER TRACE & COOKIE CLEANER ---
-:op22
+:: --- OPTION 23: OFFLINE BROWSER TRACE & COOKIE CLEANER ---
+:op23
 echo.
 echo %cRed%[INFO] Initializing Offline Browser Trace ^& Cookie Cleaner...%cReset%
 echo %cRed%[BACKGROUND] Forcibly closing browsers to unlock files, then wiping cache, cookies, and history across major browsers locally.%cReset%
@@ -753,7 +753,6 @@ if "%m_choice%"=="3" (
 )
 if "%m_choice%"=="4" goto menu
 
-:: Check if the file actually exists in the same folder as the .bat file (%~dp0)
 if not exist "%~dp0!mp3name!" (
     echo.
     echo %cRed%[ERROR] File '!mp3name!' not found! Ensure it is in the exact same folder as this script.%cReset%
@@ -766,10 +765,8 @@ set "APP_PID="
 for /f "tokens=2 delims=," %%A in ('tasklist /nh /v /fo csv ^| findstr /i "Vitorius Master Tweaks"') do set "APP_PID=%%~A"
 
 echo %cRed%[WORKING] Generating VBScript Audio Host...%cReset%
-:: Terminate any previously running instances of our background player
 wmic process where "name='wscript.exe' and commandline like '%%vbgm.vbs%%'" call terminate >nul 2>&1
 
-:: Build the background VBS file dynamically
 echo Set wmp = CreateObject("WMPlayer.OCX"^) > "%TEMP%\vbgm.vbs"
 echo wmp.settings.setMode "loop", True >> "%TEMP%\vbgm.vbs"
 echo wmp.URL = WScript.Arguments(0^) >> "%TEMP%\vbgm.vbs"
@@ -777,17 +774,117 @@ echo wmp.controls.play >> "%TEMP%\vbgm.vbs"
 echo Set objWMI = GetObject("winmgmts:\\.\root\cimv2"^) >> "%TEMP%\vbgm.vbs"
 echo appPID = WScript.Arguments(1^) >> "%TEMP%\vbgm.vbs"
 echo Do While wmp.playState ^<^> 1 >> "%TEMP%\vbgm.vbs"
-echo     WScript.Sleep 2000 >> "%TEMP%\vbgm.vbs"
-echo     If Len(appPID^) ^> 0 Then >> "%TEMP%\vbgm.vbs"
-echo         Set colProc = objWMI.ExecQuery("Select * from Win32_Process where ProcessID = " ^& appPID^) >> "%TEMP%\vbgm.vbs"
-echo         If colProc.Count = 0 Then Exit Do >> "%TEMP%\vbgm.vbs"
-echo     End If >> "%TEMP%\vbgm.vbs"
+echo      WScript.Sleep 2000 >> "%TEMP%\vbgm.vbs"
+echo      If Len(appPID^) ^> 0 Then >> "%TEMP%\vbgm.vbs"
+echo          Set colProc = objWMI.ExecQuery("Select * from Win32_Process where ProcessID = " ^& appPID^) >> "%TEMP%\vbgm.vbs"
+echo          If colProc.Count = 0 Then Exit Do >> "%TEMP%\vbgm.vbs"
+echo      End If >> "%TEMP%\vbgm.vbs"
 echo Loop >> "%TEMP%\vbgm.vbs"
 
 echo %cRed%[WORKING] Engaging Audio Stream...%cReset%
-:: Launch the invisible player and pass the file path and the app PID
 start "" wscript "%TEMP%\vbgm.vbs" "%~dp0!mp3name!" "!APP_PID!"
 
 echo %cRed%[SUCCESS] Audio is now looping in the background.%cReset%
 pause
 goto menu
+
+:: --- OPTION 25: LIVE SYSTEM RESOURCE MONITOR ---
+:op25
+:op25_loop
+cls
+echo ======================================================
+echo               LIVE SYSTEM MONITOR (Auto-refreshes 5s)
+echo ======================================================
+:: Using a more stable PowerShell block
+powershell -NoProfile -ExecutionPolicy Bypass -Command ^
+    "$cpu = Get-WmiObject Win32_Processor | Measure-Object -Property LoadPercentage -Average | Select-Object -ExpandProperty Average;" ^
+    "$mem = Get-WmiObject Win32_OperatingSystem;" ^
+    "$totalMem = $mem.TotalVisibleMemorySize;" ^
+    "$freeMem = $mem.FreePhysicalMemory;" ^
+    "$memUsage = [math]::Round((($totalMem - $freeMem) / $totalMem) * 100, 2);" ^
+    "Write-Host 'CPU Usage: ' $cpu'%% | RAM Usage: ' $memUsage'%%' -ForegroundColor Cyan;" ^
+    "try {" ^
+    "  $gpu = Get-Counter '\GPU Engine(*)\Utilization Percentage' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty CounterSamples | Measure-Object -Property CookedValue -Sum;" ^
+    "  $gpuVal = [math]::Round($gpu.Sum, 2);" ^
+    "  Write-Host 'GPU Usage: ' $gpuVal'%%' -ForegroundColor Green;" ^
+    "} catch {" ^
+    "  Write-Host 'GPU Usage: Counter Busy/Unavailable' -ForegroundColor Yellow;" ^
+    "}" ^
+    "Write-Host '---------------------------------------------------------';" ^
+    "Write-Host 'TOP 10 PROCESSES (CPU/RAM):' -ForegroundColor White;" ^
+    "Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 -Property Name, @{N='CPU(s)';E={$_.CPU}}, @{N='RAM(MB)';E={[math]::Round($_.WorkingSet / 1MB, 2)}} | Format-Table -AutoSize"
+
+:: Enhanced escape mechanism instead of standard timeout
+echo.
+choice /c rM /n /t 5 /d r /m "Press [R] to refresh now, or [M] to return to Main Menu... "
+if errorlevel 2 goto menu
+if errorlevel 1 goto op25_loop
+
+:: --- OPTION 26: PARANOID SECURITY (EXTREME LOCKDOWN) ---
+:op26
+cls
+echo ======================================================
+echo                  PARANOID SECURITY
+echo ======================================================
+echo %cRed%[WARNING] This is an extreme lockdown profile.%cReset%
+echo.
+echo This option will perform the following actions:
+echo 1. Disable Windows Script Host (Note: Breaks Option 24 background music).
+echo 2. Disable PowerShell 2.0 (Blocks legacy exploit vectors).
+echo 3. Force SEHOP (Structured Exception Handling Overwrite Protection).
+echo 4. Disable LLMNR (Prevents local network credential sniffing).
+echo 5. Kill SMBv1, v2, and v3 completely (Breaks all local file/printer sharing).
+echo 6. Set UAC to maximum (Requires password for all admin tasks).
+echo 7. Disable Remote Desktop (RDP) completely.
+echo ======================================================
+echo %cBlue%1. Proceed with Paranoid Security%cReset%
+echo %cBlue%2. Go Back to Main Menu%cReset%
+set /p parachoice="Select an option (1-2): "
+
+if "%parachoice%"=="1" goto execute_paranoid
+if "%parachoice%"=="2" goto menu
+goto op26
+
+:execute_paranoid
+echo.
+echo %cRed%[WORKING] Executing System Core Hardening...%cReset%
+
+echo %cRed%[1/6] Disabling Windows Script Host (Blocks .vbs / .js malware)...%cReset%
+reg add "HKLM\SOFTWARE\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 0 /f >nul 2>&1
+reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 0 /f >nul 2>&1
+
+echo %cRed%[2/6] Disabling PowerShell 2.0 (Legacy engine used by hackers)...%cReset%
+powershell -Command "Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2Root" >nul 2>&1
+
+echo %cRed%[3/6] Forcing Structured Exception Handling Overwrite Protection (SEHOP)...%cReset%
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v DisableExceptionChainValidation /t REG_DWORD /d 0 /f >nul 2>&1
+
+echo %cRed%[4/6] Disabling LLMNR (Prevents credential sniffing/spoofing)...%cReset%
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /v EnableMulticast /t REG_DWORD /d 0 /f >nul 2>&1
+
+echo %cRed%[5/6] Disabling SMB v1, v2, and v3 (Stops unauthorized file sharing access)...%cReset%
+powershell -Command "Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol -NoRestart" >nul 2>&1
+sc config lanmanserver start= disabled >nul 2>&1
+sc stop lanmanserver /y >nul 2>&1
+
+echo %cRed%[6/6] Hardening UAC to maximum and Disabling RDP...%cReset%
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 1 /f >nul 2>&1
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v PromptOnSecureDesktop /t REG_DWORD /d 1 /f >nul 2>&1
+reg add "HKLM\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 1 /f >nul 2>&1
+reg add "HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 1 /f >nul 2>&1
+
+echo.
+echo %cRed%======================================================%cReset%
+echo %cRed%HARDENING COMPLETE.%cReset%
+echo %cRed%Note: Local File Sharing (SMB) and VBScripts are now BLOCKED.%cReset%
+echo %cRed%Please restart your computer for all changes to apply.%cReset%
+echo %cRed%======================================================%cReset%
+pause
+goto menu
+
+:: --- EXIT ROUTINE ---
+:exit_routine
+cls
+echo %cBlue%Exiting Vitorius Master Tweaks. Goodbye.%cReset%
+timeout /t 2 >nul
+exit /b
