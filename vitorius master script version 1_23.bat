@@ -42,7 +42,7 @@ echo %cBlue%                                                            ^|___/  
 echo.
 echo    We Are One, We Are Many, We Are Crazy Alchemy 332
 echo.
-echo %cRed%[INFO] Loading creator Vitorius configurations version 1.21%cReset%
+echo %cRed%[INFO] Loading creator Vitorius configurations version 1.23%cReset%
 timeout /t 6 /nobreak >nul
 
 :menu
@@ -76,9 +76,10 @@ echo %cBlue%23. Offline Browser Trace ^& Cookie Cleaner%cReset%
 echo %cBlue%24. Play Background Music (Loop MP3)%cReset%
 echo %cBlue%25. Live System Resource Monitor (CPU/RAM/GPU)%cReset%
 echo %cBlue%26. Paranoid Security (Extreme Lockdown)%cReset%
-echo %cBlue%27. Exit%cReset%
+echo %cBlue%27. Secure Free Space Wipe (Cryptographic Zeroing)%cReset%
+echo %cBlue%28. Exit%cReset%
 echo ======================================================
-set /p choice="Select an option (1-26): "
+set /p choice="Select an option (1-28): "
 
 :: --- MAPPINGS ---
 if "%choice%"=="1" goto op1
@@ -107,7 +108,8 @@ if "%choice%"=="23" goto op23
 if "%choice%"=="24" goto op24
 if "%choice%"=="25" goto op25
 if "%choice%"=="26" goto op26
-if "%choice%"=="27" goto exit_routine
+if "%choice%"=="27" goto op27
+if "%choice%"=="28" goto exit_routine
 goto menu
 
 :: --- OPTION 1: HEAVY SYSTEM RESTORE POINT (FAILSAFE) ---
@@ -879,6 +881,113 @@ echo %cRed%HARDENING COMPLETE.%cReset%
 echo %cRed%Note: Local File Sharing (SMB) and VBScripts are now BLOCKED.%cReset%
 echo %cRed%Please restart your computer for all changes to apply.%cReset%
 echo %cRed%======================================================%cReset%
+pause
+goto menu
+
+:: --- OPTION 27: SECURE FREE SPACE WIPE (MODULAR SYSTEM) ---
+:op27
+cls
+echo ======================================================
+echo          SECURE FREE SPACE WIPE (MODULAR)
+echo ======================================================
+echo %cRed%[INFO] Initializing Storage Scanner...%cReset%
+echo %cRed%[BACKGROUND] This module parses your hardware to find active volumes.%cReset%
+echo %cRed%Choose between a Rapid 1-Pass Zero-Fill or a 3-Pass DoD Cryptographic Wipe.%cReset%
+echo.
+echo %cRed%[WORKING] Scanning active logical drives...%cReset%
+echo.
+
+:: Dynamic PowerShell drive scan displaying Type, Total Space, and Free Space beautifully
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-CimInstance Win32_LogicalDisk | Where-Object { $_.DriveType -in 2,3 } | ForEach-Object { $size=[math]::Round($_.Size/1GB, 2); $free=[math]::Round($_.FreeSpace/1GB, 2); $msg = '    [' + $_.DeviceID + '] - ' + $_.Description + ' | Total: ' + $size + 'GB | Free: ' + $free + 'GB'; Write-Host $msg -ForegroundColor Cyan }"
+echo.
+
+echo %cBlue%[M] Return to Main Menu%cReset%
+echo.
+
+:: Safe variable collection clearing old data first
+set "wipe_drive="
+set /p wipe_drive="Select the Drive Letter to wipe (e.g., C, D, M): "
+
+:: If user just hits Enter, restart the prompt instead of crashing
+if not defined wipe_drive goto op27
+
+:: Check for menu return using delayed expansion (!) to prevent quote crashes
+if /i "!wipe_drive!"=="m" goto menu
+
+:: Strip any extra characters so we only get the raw drive letter safely
+set "wipe_drive=!wipe_drive:~0,1!"
+
+:: Validate if the drive letter is valid by checking if it exists
+if not exist "!wipe_drive!:\" (
+    echo.
+    echo %cRed%[ERROR] Drive !wipe_drive!: does not exist or is not mounted.%cReset%
+    pause
+    goto op27
+)
+
+:op27_mode
+cls
+echo ======================================================
+echo          WIPE TARGET: !wipe_drive!: \
+echo ======================================================
+echo %cRed%[INFO] Select the intensity of the wipe.%cReset%
+echo.
+echo %cBlue%1. 1-Pass Rapid Zero-Fill (Best for SSDs/NVMe to minimize hardware wear)%cReset%
+echo %cBlue%2. 3-Pass DoD Cryptographic Wipe (Extremely Slow, Maximum Paranoia)%cReset%
+echo %cBlue%3. Cancel and Return to Main Menu%cReset%
+echo ======================================================
+set "wipe_mode="
+set /p wipe_mode="Select Wipe Intensity (1-3): "
+
+if "%wipe_mode%"=="1" goto run_wipe_1
+if "%wipe_mode%"=="2" goto run_wipe_3
+if "%wipe_mode%"=="3" goto menu
+goto op27_mode
+
+:run_wipe_1
+cls
+echo ======================================================
+echo       ENGAGING 1-PASS RAPID ZERO-FILL ON !wipe_drive!:
+echo ======================================================
+echo %cRed%[KERNEL] Hooking into PowerShell System.IO .NET API...%cReset%
+echo %cRed%[INFO] Pass 1: Streaming pure zeroes (0x00) into unallocated sectors.%cReset%
+echo.
+echo %cRed%[WARNING] Windows may briefly display a 'Low Disk Space' pop-up.%cReset%
+echo %cRed%This is entirely normal. The footprint will self-destruct upon completion.%cReset%
+echo.
+echo %cBlue%You can safely minimize this window. Do NOT close it until complete.%cReset%
+echo ======================================================
+
+:: Creates a 64MB RAM buffer of zeroes, streams it to the drive until space runs out, then deletes the file.
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue'; $path = '!wipe_drive!:\Vitorius_Zero_Temp.tmp'; $buffer = New-Object byte[] (64 * 1024 * 1024); try { $fs = [System.IO.File]::Create($path); while ($true) { $fs.Write($buffer, 0, $buffer.Length) } } catch { }; if ($fs) { $fs.Close() }; Remove-Item -Path $path -Force"
+
+echo.
+echo ======================================================
+echo %cRed%[SUCCESS] Free space on !wipe_drive!: successfully zero-filled (1-Pass).%cReset%
+echo ======================================================
+pause
+goto menu
+
+:run_wipe_3
+cls
+echo ======================================================
+echo      ENGAGING 3-PASS CRYPTOGRAPHIC WIPE ON !wipe_drive!:
+echo ======================================================
+echo %cRed%[KERNEL] Hooking into native Windows Cipher API...%cReset%
+echo %cRed%[INFO] Pass 1: Writing Zeroes (0x00)%cReset%
+echo %cRed%[INFO] Pass 2: Overwriting (0xFF)%cReset%
+echo %cRed%[INFO] Pass 3: Writing Pseudorandom Numbers%cReset%
+echo.
+echo %cBlue%You can safely minimize this window. Do NOT close it until complete.%cReset%
+echo ======================================================
+
+:: Execute Cipher on the designated drive letter
+cipher /w:!wipe_drive!:\
+
+echo.
+echo ======================================================
+echo %cRed%[SUCCESS] Free space on !wipe_drive!: cryptographically eradicated (3-Pass).%cReset%
+echo ======================================================
 pause
 goto menu
 
