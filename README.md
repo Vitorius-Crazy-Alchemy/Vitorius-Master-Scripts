@@ -22,5 +22,5 @@ Smart optimise SSD and hard drives,
 Offline browser trace and cookie cleaner,
 Play background music,
 Hardware usage and most active processes monitor,
-Paranoid Security
+Paranoid Security,
 Secure Free Space Wipe
