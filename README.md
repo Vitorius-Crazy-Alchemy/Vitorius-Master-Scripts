@@ -23,3 +23,4 @@ Offline browser trace and cookie cleaner,
 Play background music,
 Hardware usage and most active processes monitor,
 Paranoid Security
+Secure Free Space Wipe
