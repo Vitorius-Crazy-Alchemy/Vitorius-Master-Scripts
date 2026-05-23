@@ -24,3 +24,4 @@ Play background music,
 Hardware usage and most active processes monitor,
 Paranoid Security,
 Secure Free Space Wipe
+Added RAM Purge
